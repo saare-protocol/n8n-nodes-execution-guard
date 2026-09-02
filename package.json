@@ -16,7 +16,10 @@
         "dora",
         "gdpr"
     ],
-    "author": "Alfonso Ferrer Torres",
+    "author": {
+        "name": "Alfonso Ferrer Torres",
+        "email": "legal@saare.es"
+    },
     "license": "Apache-2.0",
     "n8n": {
         "n8nNodesApiVersion": 1,
