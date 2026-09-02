@@ -1,41 +1,41 @@
-﻿{
-    "name":  "@saare-protocol/n8n-nodes-execution-guard",
-    "version":  "1.0.0",
-    "description":  "SAARE L7 Execution Authorization \u0026 DLP Compliance Guard for AI Agents",
-    "main":  "dist/index.js",
-    "scripts":  {
-                    "build":  "tsc \u0026\u0026 copyfiles -u 1 nodes/**/*.svg dist/",
-                    "prepublishOnly":  "npm run build"
-                },
-    "keywords":  [
-                     "n8n-community-node-package",
-                     "n8n",
-                     "saare",
-                     "l7-firewall",
-                     "ai-governance",
-                     "dora",
-                     "gdpr"
-                 ],
-    "author":  "Alfonso Ferrer Torres",
-    "license":  "Apache-2.0",
-    "n8n":  {
-                "n8nNodesApiVersion":  1,
-                "nodes":  [
-                              "dist/nodes/SaareExecutionGuard/SaareExecutionGuard.node.js"
-                          ],
-                "credentials":  [
-                                    "dist/credentials/SaareApi.credentials.js"
-                                ]
-            },
-    "devDependencies":  {
-                            "@n8n/node-cli":  "^0.46.1",
-                            "@types/node":  "^20.0.0",
-                            "copyfiles":  "^2.4.1",
-                            "n8n-workflow":  "^1.0.0",
-                            "typescript":  "^5.0.0"
-                        },
-    "repository":  {
-                       "type":  "git",
-                       "url":  "https://github.com/saare-protocol/n8n-nodes-execution-guard.git"
-                   }
+{
+    "name": "@saare-protocol/n8n-nodes-execution-guard",
+    "version": "1.0.0",
+    "description": "SAARE L7 Execution Authorization & DLP Compliance Guard for AI Agents",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc && copyfiles -u 1 nodes/**/*.svg dist/",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "n8n-community-node-package",
+        "n8n",
+        "saare",
+        "l7-firewall",
+        "ai-governance",
+        "dora",
+        "gdpr"
+    ],
+    "author": "Alfonso Ferrer Torres",
+    "license": "Apache-2.0",
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "nodes": [
+            "dist/nodes/SaareExecutionGuard/SaareExecutionGuard.node.js"
+        ],
+        "credentials": [
+            "dist/credentials/SaareApi.credentials.js"
+        ]
+    },
+    "devDependencies": {
+        "@n8n/node-cli": "^0.46.1",
+        "@types/node": "^20.0.0",
+        "copyfiles": "^2.4.1",
+        "n8n-workflow": "^1.0.0",
+        "typescript": "^5.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saare-protocol/n8n-nodes-execution-guard.git"
+    }
 }
