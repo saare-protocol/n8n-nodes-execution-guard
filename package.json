@@ -1,5 +1,5 @@
 ﻿{
-    "name":  "@saarems3v666/n8n-nodes-execution-guard",
+    "name":  "@saare-protocol/n8n-nodes-execution-guard",
     "version":  "1.0.0",
     "description":  "SAARE L7 Execution Authorization \u0026 DLP Compliance Guard for AI Agents",
     "main":  "dist/index.js",
